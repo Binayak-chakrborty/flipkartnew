@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Flipkart.com</title>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+ 
+</head>
+
+
+
+<style>
+  
+ 
+body {
+ 
+  margin: 0px;
+  padding: 0%;
+  background-color: white;
+  width: 100%;
+  height: auto;
+ 
+  
+ }
+
+ .nav{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction:row;
+  flex-grow: 2;
+  width: 100%;
+ }
+
+ .nav::before{
+  content: "";
+ background-color: rgb(117, 133, 133);
+  height: 100%;
+  width: 100%;
+ }
+
+ 
+ #searchbar {
+    width: 600px;
+    height: 35px;
+  border: 2px solid white;
+  background-color: rgb(231, 232, 232);
+  border-radius: 10px;
+ }
+
+ ul li {
+  list-style: none;
+  padding: 0px 30px 0px 0px;
+
+
+ }
+
+ .navitems {
+  display: flex;
+  
+
+ }
+ .navitems p{
+  padding-top: 12px;
+ }
+
+ select {
+  width: 100px;
+  height: 50px;
+  border: 2px solid black;
+ }
+
+ .cart {
+  display: flex;
+  padding-left: 20px;
+ }
+
+ a {
+    font-size: 20px;
+    color: black;
+  text-decoration: none;
+ }
+
+ #accesszone {
+    margin: 10px;
+ padding: 2px;
+ display: flex;
+ 
+ width: 100%;
+ margin: 3px;
+
+  
+ }
+
+ #accesszone::before {
+  height:100%;
+  width: 100%;
+  content: "";
+  
+  
+ }
+
+ #accesszone img {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+  padding: 0px 25px 0px 0px;
+ transition: all;
+ }
+ #accesszone img:hover{
+    box-sizing: border-box;
+   filter: drop-shadow(3px 3px rgb(192, 212, 12));
+ }
+
+
+ .carousel-item{
+  height: 100%;
+  width: 100%;
+ }
+ .carousel-item img{
+  height: 200px;
+  width: 200px;
+ }
+ #container{
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(231, 232, 232);
+    width: 100%;
+    
+ }
+ .box{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    
+    text-align: center;
+    
+    /* border: 2px solid black; */
+    }
+ .box img{
+    height:100px;
+  width: 100px;
+    border-radius: 25%;
+    transition: all;
+}
+
+ 
+ .box img:hover{
+    transform: scale(0.9);
+    border-radius: 25px;
+ }
+
+.box1{
+    
+    margin: 10px;
+    display: block;
+    text-align: center;
+    box-sizing: border-box;
+    border:2px solid white;
+    box-shadow: 3px 3px gold;
+   }
+   .item{
+    display: flex;
+    overflow: scroll;
+   width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(227, 234, 234);
+   }
+   .item::-webkit-scrollbar{
+    width: 0px;
+   }
+   .heading
+   {
+    font-size: 30px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   }
+   #cupon-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(66, 118, 118,0.51);
+    
+   }
+   .box2{
+    margin: 10px;
+   }
+   .box2 img{
+    height: 26vh;
+    width: 48vw;
+    border-radius: 20px;
+    transition: all;
+   }
+   .box2 img:hover{
+    transform: scale(0.9);
+    border-radius: 25px;
+
+ }
+ .footer{
+    background-color: black;
+    color: white;
+    width: 100%;
+    text-align: center;
+ }
+
+ @media only screen and (max-width: 1236px) {
+        #searchbar{
+ width: 54vw;
+    height: 5vh;
+}
+body{
+ width:fit-content;
+ width: 100%;
+ height: auto;
+display: block;
+ margin: auto;
+}
+.cart {
+  display: flex;
+  padding-left: 10px;
+ }
+
+#accesszone {
+ display: flex;
+ 
+ width: 80%;
+ 
+ 
+ overflow: scroll;
+ 
+}
+#accesszone img{
+ height: 12.5vh;
+    width: 22.5vw;
+ border-radius: 25%;
+}
+#accesszone ::-webkit-scrollbar{
+ width: 0px;
+}
+
+.box img{
+ height: 18vh;
+  width: 25vw;
+
+}
+.item{
+ display: flex;
+ 
+ 
+
+ align-items: center;
+ justify-content: center;
+ background-color: rgb(227, 234, 234);
+}
+.item::-webkit-scrollbar{
+ width: 0px;
+}
+
+}
+</style>
+
+<body>
+ <div id="nav">
+  <ul class="nav">
+   <li>
+    <a href=""><img
+      src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/flipkart-095e08.svg"
+      width="130" height="22" alt="Flipkart" title="Flipkart"></a>
+   </li>
+   <li class="navitems">
+    <button class="btn" value="search"><img src="search.png" height="30px" width="30px"> </button>
+  <input type="search" id="searchbar"placeholder="search order here">
+   </li>
+   <li class="navitems">
+    <a href="">
+     <img src="logo1.svg" alt="" height="30px" width="30px">
+    </a>
+   </li>
+   <li class="navitems">
+    <img src="signin.jpeg" alt="" height="30px" width="50px">
+    <select name="" id="signin" value="">
+     <option value="login">my profile</option>
+     <option value="login">plus zone</option>
+     <option value="login"> orders</option>
+     <option value="login">wishlist</option>
+     <option value="login">log in</option>
+    </select>
+   </li>
+   <li class="navitems">
+    <a href="">
+     <div class="cart">
+      <img src="cartlogo.jpeg" alt="" height="50px" width="50px">
+      <p>cart</p>
+     </div>
+    </a>
+   </li>
+  </ul>
+ </div>
+<div id="accesszone">
+    <div class="items"><a href=""><img src="logo1.webp" alt=""></a></div>
+    <div class="items"><img src="mobiles.webp" alt=""></div>
+    <div class="items"><a href=""><img src="logo2.webp" alt=""></a></div>
+    <div class="items"><a href=""><img src="logo3.webp" alt=""></a></div>
+    <div class="items"><a href=""><img src="logo4.webp" alt=""></a></div>
+    <div class="items"><a href=""><img src="logo5.webp" alt=""></a></div>
+    <div class="items"><a href=""><img src="logo6.webp" alt=""></a></div>
+    <div class="items"><a href=""><img src="logo7.webp" alt=""></a></div>
+    <div class="items"><a href=""><img src="logo8.webp" alt=""></a></div>
+    <div class="items"><a href=""><img src="logo9.webp" alt=""></a></div>
+</div>
+ 
+
+<section class="banner">
+ <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+     <div class="carousel-inner">
+         <div class="carousel-item active">
+             <img src="add1.webp" class="d-block w-100" alt="...">
+         </div>
+         <div class="carousel-item">
+             <img src="add2.webp" class="d-block w-100" alt="...">
+         </div>
+         <div class="carousel-item">
+             <img src="add3.webp" class="d-block w-100" alt="...">
+         </div>
+     </div>
+     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+         data-bs-slide="prev">
+         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+         <span class="visually-hidden">Previous</span>
+     </button>
+     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+         data-bs-slide="next">
+         <span class="carousel-control-next-icon" aria-hidden="true"></span>
+         <span class="visually-hidden">Next</span>
+     </button>
+ </div>
+
+</section>
+
+
+<div id="container">
+    
+    <div class="box1"><a href=""><img src="acadd.webp" alt=""></a></div>
+    <div class="box1"><a href=""><img src="mobileadd.webp" alt=""></a></div>
+    <div class="box1"><a href=""><img src="laptopadd.webp" alt=""></a></div>
+
+     </div>
+     </div>
+     <div id="container2">
+    <h2 class="heading">Top Selling SmartPhones</h2>
+    <div class="item">
+        <div class="box"><a href=""><img src="galaxyA54.webp" alt=""><p>GalaxyA54</p></a></div>
+        <div class="box"><a href=""><img src="oneplus.webp" alt=""><p>oneplus</p></a></div>
+        <div class="box"><a href=""><img src="mobile3.webp" alt=""><p>Realme Narzo</p></a></div>
+        <div class="box"><a href=""><img src="mobile4.webp" alt=""><p>Realme Narzo</p></a></div>
+        <div class="box"><a href=""><img src="mobiles.webp" alt=""><p>iphone 14+</p></a></div>
+        <div class="box"><a href=""><img src="mobile6.webp" alt=""><p>oneplus 8</p></a></div>
+        <div class="box"><a href=""><img src="google pixel.webp" alt=""><p>Google pixel</p></a></div>
+        <div class="box"><a href=""><img src="motorola.webp" alt=""><p>Motorola</p></a></div>
+        <div class="box"><a href=""><img src="opporeno8.webp" alt=""><p>oppo reno8</p></a></div>
+        
+         </div>
+        </div>
+         
+     <div id="container2">
+    <h2 class="heading">Top Fashion Deals</h2>
+    <div class="item">
+        <div class="box"><a href=""><img src="boot.webp" alt=""><p>shoes</p></a></div>
+        <div class="box"><a href=""><img src="mensdress.webp" alt=""><p>Mens Dress</p></a></div>
+        <div class="box"><a href=""><img src="womensdress.webp" alt=""><p>WomenDress</p></a></div>
+        <div class="box"><a href=""><img src="sunglass.webp" alt=""><p>Sunglasses</p></a></div>
+        <div class="box"><a href=""><img src="bag.webp" alt=""><p>Bag</p></a></div>
+        <div class="box"><a href=""><img src="kidsweae.webp" alt=""><p>KidsWear</p></a></div>
+        <div class="box"><a href=""><img src="acimage.jpg" alt=""><p>KidsWear</p></a></div>
+        <div class="box"><a href=""><img src="cricket bat.jpg" alt=""><p>KidsWear</p></a></div>
+       
+        </div>
+       </div>
+       <div id="cupon-container">
+    
+        <div class="box2"><a href=""><img src="cupon1.webp" alt=""></a></div>
+        <div class="box2"><a href=""><img src="cupon2.avif" alt=""></a></div>
+    
+         </div>
+<section class="footer">
+    <p>visit again</p>
+</section>
+</body>
+
+</html>
